@@ -29,7 +29,7 @@ public class DataGenerator {
 
     public static String generatePhone(String locale) {
         Faker faker = new Faker(new Locale(locale));
-        String phoneNumber = faker.phoneNumber().phoneNumber();
+        String phoneNumber = faker.phoneNumber().cellPhone();
         return phoneNumber;
     }
 
